@@ -17,11 +17,11 @@
         <activity
             android:name=".ForgotPassword"
             android:label="@string/title_activity_forgot_password"
-            android:theme="@style/Theme.Bioxotic.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SignIn" />
         <activity android:name=".SplashScreen" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Test"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
