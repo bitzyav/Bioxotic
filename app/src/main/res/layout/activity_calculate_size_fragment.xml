@@ -64,19 +64,19 @@
         android:textColor="@color/white"
         />
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="25dp"
         android:background="@drawable/round_edit_text"
         android:gravity="center"
         android:hint="Username"
-        android:textSize="18sp"
         android:inputType="text"
-        />
-
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btn_calculate"
