@@ -53,6 +53,15 @@
         android:layout_gravity="center"
         />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="Sign in with Google"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -124,6 +133,8 @@
             android:textColor="@color/dusty_white"
             />
 
+
     </LinearLayout>
+
 
 </LinearLayout>
