@@ -20,6 +20,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:src="@drawable/back36"
+            android:scaleType="fitXY"
             android:layout_gravity="left"
             android:background="@null"
             />
@@ -29,7 +30,7 @@
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:background="@drawable/bioxotic"/>
-        " />
+
 
         <ImageButton
             android:layout_width="wrap_content"

@@ -20,6 +20,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:src="@drawable/back36"
+            android:scaleType="fitXY"
             android:layout_gravity="left"
             android:background="@null"
             />
@@ -29,7 +30,6 @@
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:background="@drawable/bioxotic"/>
-        " />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -61,30 +61,37 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:gravity="center"
-        android:background="@drawable/round_button"
-        android:layout_gravity="center"/>
+        android:id="@+id/iv_img_desc"
+        android:layout_width="800px"
+        android:layout_height="170px"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/axolotl" />
 
     <ImageView
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:id="@+id/iv_image_description"
+        android:layout_width="350px"
+        android:layout_height="350px"
         android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
         android:gravity="center"
-        android:background="@drawable/round_button"
+        android:background="@drawable/axolotlcuadrado"
         android:layout_gravity="center"/>
 
     <TextView
+        android:id="@+id/tv_description"
         android:layout_width="315dp"
-        android:layout_height="240dp"
+        android:layout_height="315dp"
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:gravity="top"
-        android:text="It is the most popular bird within this type of pet, thanks to the facilities that care for them represent, so it is the most suitable for those who have a pet bird for the first time. They are generally small animals (approximately 20 cm), which with good care can live up to 12 years."
+        android:text="The correct maintenance of axolotls is summarized in the quality of the water, temperature, filtering and lighting. \n \nThey are considered strict carnivores in free life and feed on small crustaceans, fish, larvae of other insects, copepods and microorganisms."
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textAlignment="center"
+        android:textSize="22sp"
+        tools:ignore="RtlCompat" />
 
 </LinearLayout>

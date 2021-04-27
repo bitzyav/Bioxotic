@@ -5,7 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal">
 
-    <com.google.android.material.imageview.ShapeableImageView
+
+    <ImageView
+        android:id="@+id/iv_image_specie"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:adjustViewBounds="true"
@@ -14,7 +16,7 @@
         app:shapeAppearance="@style/round_imageview"/>
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_name_specie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -22,16 +24,16 @@
         android:layout_marginRight="15dp"
         android:layout_weight="14"
         android:text="European Goldfinch"
-        android:textColor="@color/gray_background"
+        android:textColor="@color/white"
         android:fontFamily="@font/montserrat_medium"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_see_more"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:text="See More"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textAllCaps="false"
         android:background="@drawable/round_button"
         android:layout_gravity="center"

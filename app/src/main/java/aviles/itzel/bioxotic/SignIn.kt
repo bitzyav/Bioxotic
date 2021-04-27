@@ -2,8 +2,10 @@ package aviles.itzel.bioxotic
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import aviles.itzel.bioxotic.ui.species.SpeciesFragment
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -16,7 +18,7 @@ class SignIn : AppCompatActivity() {
 
     val RC_SIGN_IN = 123
     val COD_LOGOUT = 456
-     lateinit var mGoogleSignInClient : GoogleSignInClient
+    lateinit var mGoogleSignInClient : GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,10 +37,17 @@ class SignIn : AppCompatActivity() {
 
         val sign_id_button: com.google.android.gms.common.SignInButton = findViewById(R.id.sign_in_button)
 
-            sign_id_button.setOnClickListener{
-                var signInIntent: Intent? = mGoogleSignInClient.getSignInIntent();
-                startActivityForResult(signInIntent, RC_SIGN_IN);
-            }
+        sign_id_button.setOnClickListener{
+            var signInIntent: Intent? = mGoogleSignInClient.getSignInIntent();
+            startActivityForResult(signInIntent, RC_SIGN_IN);
+        }
+
+        val btn_sign_in : Button = findViewById(R.id.btn_sign_in)
+        btn_sign_in.setOnClickListener{
+            var signInIntent: Intent? = Intent(this, SpeciesF::class.java)
+            startActivity(signInIntent)
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
