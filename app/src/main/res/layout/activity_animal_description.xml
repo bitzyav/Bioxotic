@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.species.SpeciesFragment"
     android:orientation="vertical"
-    android:background="@color/gray_background">
+    android:background="@color/gray_background"
+    tools:context=".Animal_description">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -17,6 +17,7 @@
         android:layout_marginBottom="15dp">
 
         <ImageButton
+            android:id="@+id/ib_back_menu_animal_species"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:src="@drawable/back36"
@@ -71,27 +72,33 @@
 
     <ImageView
         android:id="@+id/iv_image_description"
-        android:layout_width="350px"
-        android:layout_height="350px"
+        android:layout_width="250px"
+        android:layout_height="250px"
         android:layout_marginTop="20dp"
         android:scaleType="fitXY"
         android:gravity="center"
-        android:background="@drawable/axolotlcuadrado"
+        android:background="@drawable/axolotlcsquare"
         android:layout_gravity="center"/>
 
-    <TextView
-        android:id="@+id/tv_description"
-        android:layout_width="315dp"
-        android:layout_height="315dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="top"
-        android:text="The correct maintenance of axolotls is summarized in the quality of the water, temperature, filtering and lighting. \n \nThey are considered strict carnivores in free life and feed on small crustaceans, fish, larvae of other insects, copepods and microorganisms."
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        tools:ignore="RtlCompat" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="315dp"
+            android:layout_height="315dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="top"
+            android:text="The correct maintenance of axolotls is summarized in the quality of the water, temperature, filtering and lighting. \n \nThey are considered strict carnivores in free life and feed on small crustaceans, fish, larvae of other insects, copepods and microorganisms."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            tools:ignore="RtlCompat" />
+
+    </ScrollView>
 
 </LinearLayout>

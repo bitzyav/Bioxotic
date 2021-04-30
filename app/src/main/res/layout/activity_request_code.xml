@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".request_code"
     android:orientation="vertical"
+    tools:context=".Request_code"
     android:background="@drawable/scnd_background">
 
     <ImageView
@@ -42,12 +42,11 @@
 
 
     <Button
-        android:id="@+id/btn_sign_in"
+        android:id="@+id/btn_change_password"
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:text="Change password"
         android:background="@drawable/round_button"
         android:layout_gravity="center"
         />
-
 </LinearLayout>

@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.species.SpeciesFragment"
+    android:background="@color/gray_background"
     android:orientation="vertical"
-    android:background="@color/gray_background">
+    tools:context=".Hospital_contacts">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
             android:src="@drawable/back36"
             android:scaleType="fitXY"
             android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
             android:background="@null"
             />
 
@@ -58,7 +59,7 @@
             android:gravity="center"
             android:hint="Search"
             android:textColor="@color/dusty_white" />
-        
+
     </LinearLayout>
 
     <Spinner
@@ -132,6 +133,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        />
+
 
 </LinearLayout>
