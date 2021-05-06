@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bioxotic">
-        <activity android:name=".Request_code"></activity>
+        <activity android:name=".PrincipalActivity"></activity>
+        <activity android:name=".Request_code" />
         <activity android:name=".Request_email" />
         <activity android:name=".forgot_password" />
         <activity android:name=".Hospital_contacts" />

@@ -11,18 +11,17 @@
     <ImageView
         android:layout_width="220dp"
         android:layout_height="40dp"
-        android:background="@drawable/bioxotic"
         android:layout_gravity="center"
         android:layout_marginTop="240dp"
-        android:layout_marginBottom="50dp"
-        />
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bioxotic" />
 
     <EditText
         android:id="@+id/et_username"
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/round_edit_text"
         android:gravity="center"
         android:hint="Username"
@@ -42,14 +41,24 @@
         android:textSize="18sp"
         android:inputType="textPassword"
         android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         />
 
     <Button
         android:id="@+id/btn_sign_in"
         android:layout_width="250dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
         android:text="Sign in"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
         android:background="@drawable/round_button"
         android:layout_gravity="center"
         />
