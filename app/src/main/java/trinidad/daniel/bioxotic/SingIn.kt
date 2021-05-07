@@ -13,6 +13,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import kotlinx.android.synthetic.main.activity_sing_in.*
+import trinidad.daniel.bioxotic.ui.home.HomeFragment
 
 
 class SingIn : AppCompatActivity() {
