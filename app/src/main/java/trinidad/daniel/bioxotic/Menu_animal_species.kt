@@ -13,6 +13,7 @@ import android.widget.ListView
 import kotlinx.android.synthetic.main.activity_menu_animal_species.*
 import kotlinx.android.synthetic.main.item_species.view.*
 import trinidad.daniel.bioxotic.entities.Specie
+import trinidad.daniel.bioxotic.ui.home.HomeFragment
 
 class Menu_animal_species : AppCompatActivity() {
     var species = ArrayList<Specie>()
@@ -32,7 +33,7 @@ class Menu_animal_species : AppCompatActivity() {
 
         val ib_back_menu_species: ImageButton = findViewById(R.id.ib_back_menu_species)
         ib_back_menu_species.setOnClickListener{
-            var signInIntent: Intent? = Intent(this, Menu_species::class.java)
+            var signInIntent: Intent? = Intent(this, HomeFragment::class.java)
             startActivity(signInIntent)
         }
     }

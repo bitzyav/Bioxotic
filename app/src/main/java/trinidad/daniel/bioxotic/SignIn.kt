@@ -12,11 +12,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
-import kotlinx.android.synthetic.main.activity_sing_in.*
+import kotlinx.android.synthetic.main.activity_sign_in.*
 import trinidad.daniel.bioxotic.ui.home.HomeFragment
 
 
-class SingIn : AppCompatActivity() {
+class SignIn : AppCompatActivity() {
 
    lateinit var mGoogleSignInClient: GoogleSignInClient
     val RC_SIGN_IN = 1234
@@ -24,7 +24,7 @@ class SingIn : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sing_in)
+        setContentView(R.layout.activity_sign_in)
 
         // Configure sign-in to request the user's ID, email address, and basic
 // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -46,7 +46,7 @@ class SingIn : AppCompatActivity() {
 
         val btn_sign_in : Button = findViewById(R.id.btn_sign_in)
         btn_sign_in.setOnClickListener{
-            var signInIntent: Intent? = Intent(this, Menu_species::class.java)
+            var signInIntent: Intent? = Intent(this, HomeFragment::class.java)
             startActivity(signInIntent)
         }
 
