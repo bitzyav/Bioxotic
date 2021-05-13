@@ -1,30 +1,23 @@
-package trinidad.daniel.bioxotic.ui.dashboard
+package trinidad.daniel.bioxotic.ui.contact
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import trinidad.daniel.bioxotic.R
 
-class DashboardFragment : Fragment() {
-
-    private lateinit var dashboardViewModel: DashboardViewModel
-
+class ContactFragment: Fragment() {
+    private lateinit var contactViewModel: ContactViewModel
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProvider(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.favorites_dashboard, container, false)
-
-
-
+        contactViewModel =
+                ViewModelProvider(this).get(ContactViewModel::class.java)
+        val root = inflater.inflate(R.layout.activity_hospital_contacts, container, false)
         return root
     }
 }

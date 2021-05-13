@@ -12,7 +12,7 @@ class Request_code : AppCompatActivity() {
 
         val btn_change_password : Button = findViewById(R.id.btn_change_password)
         btn_change_password.setOnClickListener{
-            var signInIntent: Intent? = Intent(this, SignIn::class.java)
+            var signInIntent: Intent? = Intent(this, SingIn::class.java)
             startActivity(signInIntent)
         }
 

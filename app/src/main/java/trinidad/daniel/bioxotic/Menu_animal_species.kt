@@ -33,7 +33,7 @@ class Menu_animal_species : AppCompatActivity() {
 
         val ib_back_menu_species: ImageButton = findViewById(R.id.ib_back_menu_species)
         ib_back_menu_species.setOnClickListener{
-            var signInIntent: Intent? = Intent(this, HomeFragment::class.java)
+            var signInIntent: Intent? = Intent(this, MainActivity::class.java)
             startActivity(signInIntent)
         }
     }

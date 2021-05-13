@@ -16,8 +16,9 @@
         <activity android:name=".Hospital_contacts" />
         <activity android:name=".Animal_description" />
         <activity android:name=".Menu_animal_species" />
+        <activity android:name=".Menu_species" />
         <activity android:name=".SignUp" />
-        <activity android:name=".SignIn">
+        <activity android:name=".SingIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
