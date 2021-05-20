@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_global_chat.*
 import trinidad.daniel.bioxotic.Menu_animal_species
 import trinidad.daniel.bioxotic.R
 import trinidad.daniel.bioxotic.SignIn
