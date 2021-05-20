@@ -28,4 +28,10 @@
         android:name="trinidad.daniel.bioxotic.ui.contact.ContactFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/activity_hospital_contacts" />
+
+    <fragment
+        android:id="@+id/navigation_global_chat"
+        android:name="trinidad.daniel.bioxotic.ui.Global_chat.Global_chat_Fragment"
+        android:label="@string/title_global_chat"
+        tools:layout="@layout/activity_global_chat" />
 </navigation>

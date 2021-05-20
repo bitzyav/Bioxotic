@@ -6,13 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import trinidad.daniel.bioxotic.Menu_animal_species
 import trinidad.daniel.bioxotic.R
-import trinidad.daniel.bioxotic.SingIn
+import trinidad.daniel.bioxotic.SignIn
 
 class HomeFragment : Fragment() {
 
@@ -35,7 +33,7 @@ class HomeFragment : Fragment() {
 
         val ib_back_login: ImageButton = root.findViewById(R.id.ib_back_login)
         ib_back_login.setOnClickListener{
-            var signInIntent: Intent? = Intent(root.context, SingIn::class.java)
+            var signInIntent: Intent? = Intent(root.context, SignIn::class.java)
             startActivity(signInIntent)
         }
         return root

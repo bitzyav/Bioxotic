@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/scnd_background"
-    tools:context=".SingIn">
+    android:orientation="vertical"
+    tools:context=".SignIn">
 
     <ImageView
         android:layout_width="220dp"
@@ -17,7 +17,7 @@
         android:background="@drawable/bioxotic" />
 
     <EditText
-        android:id="@+id/et_username"
+        android:id="@+id/et_email"
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:layout_gravity="center"
@@ -25,117 +25,109 @@
         android:background="@drawable/round_edit_text"
         android:gravity="center"
         android:hint="Username"
-        android:textColor="@color/green"
-        android:textSize="18sp"
         android:inputType="text"
-        />
+        android:textColor="@color/gray_background"
+        android:textColorHint="@color/gray_background"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="250dp"
         android:layout_height="35dp"
-        android:gravity="center"
-        android:background="@drawable/round_edit_text"
-        android:hint="Password"
-        android:textColor="@color/green"
-        android:textSize="18sp"
-        android:inputType="textPassword"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        />
+        android:background="@drawable/round_edit_text"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btn_sign_in"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="20dp"
-        android:text="Sign in"
-        android:background="@drawable/round_button"
         android:layout_gravity="center"
-        />
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:text="Sign in" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:scaleType="fitXY"
-        android:background="@drawable/round_button"
         android:layout_gravity="center"
-        />
+        android:background="@drawable/round_button"
+        android:scaleType="fitXY" />
 
     <TextView
         android:id="@+id/text_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot password?"
         android:layout_gravity="center"
-        android:textSize="14sp"
         android:layout_marginTop="30dp"
+        android:text="Forgot password?"
         android:textColor="@color/dusty_white"
-        />
+        android:textSize="14sp" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
         <View
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="1dp"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"
             android:layout_marginLeft="80dp"
-            android:background="@color/dusty_white"
-            />
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/dusty_white" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.2"
             android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
             android:text="or"
             android:textColor="@color/dusty_white"
-            android:textSize="14sp"
-            android:gravity="center"
-            />
+            android:textSize="14sp" />
 
         <View
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="1dp"
             android:layout_gravity="center"
-            android:layout_marginRight="80dp"
             android:layout_marginLeft="10dp"
-            android:background="@color/dusty_white"
-            />
+            android:layout_marginRight="80dp"
+            android:layout_weight="1"
+            android:background="@color/dusty_white" />
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No account? "
-            android:textSize="14sp"
-            android:textColorLink="@color/green"
             android:layout_marginTop="20dp"
+            android:text="No account? "
             android:textColor="@color/dusty_white"
-            />
+            android:textColorLink="@color/green"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/text_create_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create one"
-            android:textSize="14sp"
             android:layout_marginTop="20dp"
+            android:text="Create one"
             android:textColor="@color/dusty_white"
-            />
+            android:textSize="14sp" />
     </LinearLayout>
 
 </LinearLayout>

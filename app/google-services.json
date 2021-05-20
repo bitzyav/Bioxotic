@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "245382780046",
+    "project_id": "bioxotic-b951b",
+    "storage_bucket": "bioxotic-b951b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245382780046:android:c8263d2f68222c085225df",
+        "android_client_info": {
+          "package_name": "trinidad.daniel.bioxotic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245382780046-5lr2rtnqpp7h4to33vmd11b7tvbunchf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQxHhZw2v7b9aNZEL9KL5ql41BhJkTyRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245382780046-5lr2rtnqpp7h4to33vmd11b7tvbunchf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

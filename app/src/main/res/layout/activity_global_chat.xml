@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical"
+    tools:context=".ui.Global_chat.Global_chat_Fragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bioxotic" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:src="@drawable/profile_btn36" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_layout"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/user_msg"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:hint="Write something..."
+            android:inputType="text"
+            android:textColor="@color/green"
+            android:textColorHint="@color/gray_background"/>
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/user_icon" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="480dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <ListView
+            android:id="@+id/lv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp" />
+    </ScrollView>
+
+</LinearLayout>
