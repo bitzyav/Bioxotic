@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     android:background="@color/gray_background"
     android:orientation="vertical"
-    tools:context=".ui.Global_chat.Global_chat_Fragment">
+    tools:context=".ui.global_chat.Global_chat_Fragment">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="15dp"
+        android:clickable="false">
 
         <ImageView
             android:layout_width="120dp"
@@ -22,9 +23,8 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/bioxotic" />
 
-
         <ImageButton
-            android:id="@+id/button_user"
+            android:id="@+id/button_user_5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"

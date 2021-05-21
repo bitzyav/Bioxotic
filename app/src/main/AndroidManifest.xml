@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bioxotic">
-        <activity android:name=".Global_chat"></activity>
-        <activity android:name=".item_message" />
         <activity android:name=".forum" />
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".Request_email" />

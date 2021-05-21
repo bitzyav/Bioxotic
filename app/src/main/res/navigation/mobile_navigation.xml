@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/navigation_global_chat"
-        android:name="trinidad.daniel.bioxotic.ui.Global_chat.Global_chat_Fragment"
+        android:name="trinidad.daniel.bioxotic.ui.global_chat.Global_chat_Fragment"
         android:label="@string/title_global_chat"
-        tools:layout="@layout/activity_global_chat" />
+        tools:layout="@layout/activity_global_chat"/>
 </navigation>

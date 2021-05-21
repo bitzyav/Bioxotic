@@ -1,9 +1,10 @@
-package trinidad.daniel.bioxotic.ui.Global_chat
+package trinidad.daniel.bioxotic.ui.global_chat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
-class Global_char_View_Model {
+class GlobalViewModel: ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = "This is contact Fragment"
     }

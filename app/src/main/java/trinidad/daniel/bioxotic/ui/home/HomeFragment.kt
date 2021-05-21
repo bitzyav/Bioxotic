@@ -18,6 +18,8 @@ import trinidad.daniel.bioxotic.SignIn
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
+    private lateinit var storage: FirebaseFirestore
+    private lateinit var usuario: FirebaseAuth
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -27,6 +29,9 @@ class HomeFragment : Fragment() {
         homeViewModel =
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
+        storage = FirebaseFirestore.getInstance()
+        usuario = FirebaseAuth.getInstance()
+        usuario.currentUser.email.toString()
 
         val btn_sign_in : ImageButton = root.findViewById(R.id.ib_category_fishes)
         btn_sign_in.setOnClickListener{
