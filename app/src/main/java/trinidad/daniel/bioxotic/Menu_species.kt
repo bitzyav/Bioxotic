@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import kotlinx.android.synthetic.main.activity_principal.*
 
 class Menu_species : AppCompatActivity() {
 
