@@ -54,11 +54,13 @@
             android:textColor="@color/green"
             android:textColorHint="@color/gray_background"/>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/user_img"
-            android:layout_width="70dp"
+            android:layout_width="40dp"
+            android:layout_marginRight="15dp"
             android:layout_height="match_parent"
-            android:src="@drawable/user_icon" />
+            android:src="@drawable/ic_send"
+            android:background="@android:color/transparent"/>
 
     </LinearLayout>
 

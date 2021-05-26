@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -33,10 +34,9 @@ class Global_chat_Fragment: Fragment()  {
         storage = FirebaseFirestore.getInstance()
         usuario = FirebaseAuth.getInstance()
 
-        //Send msg
-        val button : ImageButton = root.findViewById(R.id.button_user_5)
-        button.setOnClickListener {
+        val img: ImageView = root.findViewById(R.id.user_img)
 
+        img.setOnClickListener {
 
             val actividad = hashMapOf(
                 "email" to usuario.currentUser.email.toString(),
