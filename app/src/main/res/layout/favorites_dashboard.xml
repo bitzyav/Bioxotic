@@ -13,7 +13,6 @@
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp">
 
         <ImageButton
@@ -56,7 +55,7 @@
         android:layout_width="250px"
         android:layout_height="250px"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/axolotlcsquare"
         android:gravity="center"
         android:scaleType="fitXY" />
@@ -64,11 +63,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_description_fav"
@@ -84,7 +78,7 @@
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 tools:ignore="RtlCompat" />
-        </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

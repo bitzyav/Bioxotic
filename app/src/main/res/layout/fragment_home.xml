@@ -41,17 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
-
-            <EditText
-                android:layout_width="240dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/round_button"
-                android:gravity="center"
-                android:hint="Search"
-                android:textColor="@color/dusty_white" />
 
             <ImageButton
                 android:id="@+id/ib_birds"
@@ -67,7 +58,7 @@
                 android:layout_width="800px"
                 android:layout_height="170px"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:background="@null"
                 android:scaleType="fitXY"
                 android:src="@drawable/fishes" />
@@ -77,7 +68,7 @@
                 android:layout_width="800px"
                 android:layout_height="170px"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:background="@null"
                 android:scaleType="fitXY"
                 android:src="@drawable/felines" />
@@ -87,7 +78,7 @@
                 android:layout_width="800px"
                 android:layout_height="170px"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:background="@null"
                 android:scaleType="fitXY"
                 android:src="@drawable/reptiles" />
@@ -97,7 +88,7 @@
                 android:layout_width="800px"
                 android:layout_height="170px"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:background="@null"
                 android:scaleType="fitXY"
                 android:src="@drawable/amphibians" />
@@ -107,7 +98,7 @@
                 android:layout_width="800px"
                 android:layout_height="170px"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:background="@null"
                 android:scaleType="fitXY"
                 android:src="@drawable/rodents" />

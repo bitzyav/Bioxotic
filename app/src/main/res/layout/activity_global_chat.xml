@@ -38,6 +38,7 @@
         <ImageButton
             android:id="@+id/ib_send_message"
             android:layout_width="40dp"
+            android:layout_marginTop="20dp"
             android:layout_height="match_parent"
             android:layout_marginRight="15dp"
             android:background="@android:color/transparent"
@@ -71,25 +72,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="90dp">
 
-        <ScrollView
-            android:layout_width="350dp"
-            android:layout_height="480dp"
+        <ListView
+            android:id="@+id/lv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="15dp">
+            android:layout_marginBottom="20dp" />
 
-            <ListView
-                android:id="@+id/lv_messages"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="20dp" />
-        </ScrollView>
     </LinearLayout>
 
 </RelativeLayout>

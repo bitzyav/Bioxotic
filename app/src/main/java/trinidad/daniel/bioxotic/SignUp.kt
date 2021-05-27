@@ -36,20 +36,26 @@ class SignUp : AppCompatActivity() {
             !contra2.isNullOrBlank()
         ) {
 
-            if (contra1 == contra2) {
+            if(contra1.length > 6 && contra2.length > 6){
+                if (contra1 == contra2) {
+                    registrarFirebase(correo, contra1)
 
-                registrarFirebase(correo, contra1)
-
-            } else {
+                } else {
+                    Toast.makeText(
+                        this, "Passwords do not match",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }else{
                 Toast.makeText(
-                    this, "Las contraseña no coinciden",
+                    this, "Password must be at least 6 characters long",
                     Toast.LENGTH_SHORT
                 ).show()
             }
 
         } else {
             Toast.makeText(
-                this, "Ingresar datos",
+                this, "Complete the form",
                 Toast.LENGTH_SHORT
             ).show()
         }
@@ -65,7 +71,7 @@ class SignUp : AppCompatActivity() {
                     val user = auth.currentUser
 
                     Toast.makeText(
-                        baseContext, "${user.email} se ha creado correctamente",
+                        baseContext, "${user.email} has been created successfully",
                         Toast.LENGTH_SHORT
                     ).show()
                     var signInIntent: Intent? = Intent(this, SignIn::class.java)
