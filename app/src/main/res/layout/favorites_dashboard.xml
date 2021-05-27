@@ -17,7 +17,7 @@
         android:layout_marginBottom="15dp">
 
         <ImageButton
-            android:id="@+id/ib_back_menu_species"
+            android:id="@+id/ib_back_menu_animal_species"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -32,6 +32,7 @@
             android:background="@drawable/bioxotic" />
 
         <ImageButton
+            android:id="@id/ib_user_profile"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -40,33 +41,50 @@
 
     </FrameLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="vertical">
-
-        <EditText
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/round_button"
-            android:gravity="center"
-            android:hint="Search"
-            android:textColor="@color/dusty_white" />
-    </LinearLayout>
-
-    <ListView
-        android:id="@+id/lv_species_fav"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+    <ImageView
+        android:id="@+id/iv_img_desc_fav"
+        android:layout_width="800px"
+        android:layout_height="170px"
         android:layout_gravity="center"
-        android:layout_marginLeft="25dp"
+        android:background="@null"
+        android:scaleType="fitXY"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="20dp" />
+        android:src="@drawable/axolotl" />
+
+    <ImageView
+        android:id="@+id/iv_image_description_fav"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/axolotlcsquare"
+        android:gravity="center"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_description_fav"
+                android:layout_width="315dp"
+                android:layout_height="315dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="top"
+                android:text="The correct maintenance of axolotls is summarized in the quality of the water, temperature, filtering and lighting. \n \nThey are considered strict carnivores in free life and feed on small crustaceans, fish, larvae of other insects, copepods and microorganisms."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

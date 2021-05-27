@@ -33,6 +33,7 @@
             android:background="@drawable/bioxotic"/>
 
         <ImageButton
+            android:id="@id/ib_user_profile"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"

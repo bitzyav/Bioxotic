@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+
         android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp">
 
@@ -33,11 +33,12 @@
             android:background="@drawable/bioxotic"/>
 
         <ImageButton
+            android:id="@+id/ib_user_profile"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
             android:background="@null"
-            android:src="@drawable/profile_btn36" />
+            android:src="@drawable/profile_btn36"/>
 
     </FrameLayout>
 
@@ -62,7 +63,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/iv_fish"
+        android:id="@+id/iv_category_animals"
         android:layout_width="800px"
         android:layout_height="170px"
         android:scaleType="fitXY"

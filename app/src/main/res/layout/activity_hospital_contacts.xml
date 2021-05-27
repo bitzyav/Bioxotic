@@ -12,19 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp">
-
-        <ImageButton
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/back36"
-            android:scaleType="fitXY"
-            android:layout_gravity="left"
-            android:layout_marginLeft="5dp"
-            android:background="@null"
-            />
 
         <ImageView
             android:layout_width="120dp"
@@ -32,8 +21,8 @@
             android:layout_gravity="center"
             android:background="@drawable/bioxotic"/>
 
-
         <ImageButton
+            android:id="@+id/ib_user_profile"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -41,44 +30,49 @@
             android:src="@drawable/profile_btn36" />
 
     </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Category"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:orientation="vertical">
-
-        <EditText
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/round_button"
-            android:gravity="center"
-            android:hint="Search"
-            android:textColor="@color/dusty_white" />
-
-    </LinearLayout>
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"/>
 
     <Spinner
+        android:id="@+id/spinner_f"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:gravity="center"
         android:background="@drawable/round_button"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="fill_parent"
+        >
+    </Spinner>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
-        android:text="Exotic Animal"
+        android:text="Contact"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_gravity="center"
         android:gravity="center"/>
+
     <TextView
+        android:id="@+id/tv_hospital_name"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="Hospital of Orlando"
@@ -86,7 +80,9 @@
         android:textSize="20sp"
         android:layout_gravity="center"
         android:gravity="center"/>
+
     <TextView
+        android:id="@+id/tv_contact_especialist"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="Contact with specialist"
@@ -96,35 +92,36 @@
         android:gravity="center"/>
 
     <EditText
+        android:id="@+id/et_name"
         android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/round_button"
-        android:hint=" Name"
-        android:textColor="@color/dusty_white" />
+        android:hint=" Name" />
 
     <EditText
+        android:id="@+id/et_specie"
         android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:background="@drawable/round_button"
-        android:hint=" Specie"
-        android:textColor="@color/dusty_white" />
+        android:hint=" Specie"/>
+
     <EditText
+        android:id="@+id/et_message"
         android:layout_width="300dp"
         android:layout_height="130dp"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:background="@drawable/round_button"
         android:gravity="top"
-        android:hint=" Write you message..."
-        android:textColor="@color/dusty_white" />
+        android:hint=" Write you message..."/>
 
     <Button
-        android:id="@+id/button_second"
+        android:id="@+id/button_send_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send"
