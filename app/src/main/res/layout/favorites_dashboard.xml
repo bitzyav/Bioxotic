@@ -48,7 +48,7 @@
         android:background="@null"
         android:scaleType="fitXY"
         android:layout_marginTop="20dp"
-        android:src="@drawable/axolotl" />
+        />
 
     <ImageView
         android:id="@+id/iv_image_description_fav"
@@ -56,13 +56,18 @@
         android:layout_height="250px"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="@drawable/axolotlcsquare"
         android:gravity="center"
         android:scaleType="fitXY" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_description_fav"
@@ -77,8 +82,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="22sp"
-                tools:ignore="RtlCompat" />
-
+                tools:ignore="RtlCompat"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

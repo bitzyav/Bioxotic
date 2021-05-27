@@ -9,6 +9,7 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import io.grpc.util.GracefulSwitchLoadBalancer
 import kotlinx.android.synthetic.main.activity_global_chat.*
@@ -18,16 +19,17 @@ import trinidad.daniel.bioxotic.MessagesAdapter
 import trinidad.daniel.bioxotic.Profile
 import trinidad.daniel.bioxotic.R
 import trinidad.daniel.bioxotic.entities.Message
+import java.util.*
+import kotlin.collections.ArrayList
 
-class Global_chat_Fragment: Fragment()  {
-
+class Global_chat_Fragment : Fragment() {
     private lateinit var global_chat_View_Model: GlobalViewModel
 
     private lateinit var storage: FirebaseFirestore
     private lateinit var usuario: FirebaseAuth
     private var adapter: MessagesAdapter? = null
 
-    companion object{
+    companion object {
         var messages = ArrayList<Message>()
         var first = true
     }
@@ -53,39 +55,46 @@ class Global_chat_Fragment: Fragment()  {
         storage = FirebaseFirestore.getInstance()
         usuario = FirebaseAuth.getInstance()
 
-        img.setOnClickListener {
-            val actividad = hashMapOf(
-                "email" to usuario.currentUser.email.toString(),
-                "text" to user_msg.text.toString()
-            )
-
-            storage.collection("chats")
-                .add(actividad)
-                .addOnSuccessListener {
-                    Toast.makeText(root.context, "Message sent", Toast.LENGTH_SHORT).show()
-                }
-                .addOnFailureListener{
-                    Toast.makeText(root.context, it.toString(), Toast.LENGTH_SHORT).show()
-                }
-        }
-
-        if(first){
+        if (first) {
             showMssgs()
             first = false
         }
 
         adapter = MessagesAdapter(root.context, messages)
         lv.adapter = adapter
-        Toast.makeText(context, messages.toString(), Toast.LENGTH_LONG).show()
 
+        img.setOnClickListener {
+            if (!user_msg.text.toString().isEmpty()) {
+                val document: DocumentReference = storage.collection("chats")
+                    .document(Calendar.getInstance().time.toString())
+                val actividad = hashMapOf(
+                    "email" to usuario.currentUser.email.toString(),
+                    "text" to user_msg.text.toString()
+                )
+                document.set(actividad)
+                    .addOnSuccessListener {
+                        Toast.makeText(root.context, "Message sent", Toast.LENGTH_SHORT).show()
+                        messages.clear()
+                        adapter = MessagesAdapter(root.context, messages)
+                        lv.adapter = adapter
+                        showMssgs()
+                        user_msg.setText("")
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(root.context, it.toString(), Toast.LENGTH_SHORT).show()
+                    }
+            }else{
+                Toast.makeText(root.context, "Write a message", Toast.LENGTH_SHORT).show()
+            }
+        }
         return root
     }
 
-    fun showMssgs(){
+    fun showMssgs() {
         storage.collection("chats")
             .get()
             .addOnSuccessListener {
-                it.forEach{
+                it.forEach {
 
                     var email = it.getString("email")
                     val username = email!!.split("@")
@@ -99,10 +108,9 @@ class Global_chat_Fragment: Fragment()  {
 
             }
 
-            .addOnFailureListener{
+            .addOnFailureListener {
                 Toast.makeText(context, it.toString(), Toast.LENGTH_SHORT).show()
             }
-
     }
 
 }

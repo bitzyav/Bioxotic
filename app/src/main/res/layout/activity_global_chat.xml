@@ -37,12 +37,12 @@
 
         <ImageButton
             android:id="@+id/ib_send_message"
-            android:layout_width="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="53dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
             android:layout_marginRight="15dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_send"/>
+            android:src="@drawable/ic_send" />
     </LinearLayout>
 
     <FrameLayout
@@ -83,5 +83,4 @@
             android:layout_marginBottom="20dp" />
 
     </LinearLayout>
-
 </RelativeLayout>

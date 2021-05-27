@@ -70,7 +70,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_description"
@@ -82,11 +87,12 @@
                 android:layout_marginRight="20dp"
                 android:gravity="top"
                 android:text="The correct maintenance of axolotls is summarized in the quality of the water, temperature, filtering and lighting. \n \nThey are considered strict carnivores in free life and feed on small crustaceans, fish, larvae of other insects, copepods and microorganisms."
-                android:textColor="@color/white"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="22sp"
-                tools:ignore="RtlCompat" />
-
+                tools:ignore="RtlCompat"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
