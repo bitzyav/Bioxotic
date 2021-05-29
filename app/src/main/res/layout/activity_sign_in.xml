@@ -24,11 +24,11 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/round_edit_text"
         android:gravity="center"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="text"
         android:textColor="@color/gray_background"
         android:textColorHint="@color/gray_background"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
     <EditText
         android:id="@+id/et_password"
@@ -52,14 +52,6 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/round_button"
         android:text="Sign in" />
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="@drawable/round_button"
-        android:scaleType="fitXY" />
 
     <TextView
         android:id="@+id/text_forgot_password"
